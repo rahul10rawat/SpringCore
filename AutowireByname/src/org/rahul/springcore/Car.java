@@ -18,5 +18,11 @@ public class Car {
 		this.engine = engine;
 	}
 	
+	public void printCarDetails()
+	{
+			System.out.println("name : " +name + " , engine name : "+engine.getName() + " , engine power : "+engine.getPower());
+		
+	}
+	
 
 }

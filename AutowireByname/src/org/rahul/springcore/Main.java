@@ -1,15 +1,17 @@
 package org.rahul.springcore;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Main {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		 
+			ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
+			Car carObj = (Car) context.getBean("carBean");
+			
+			carObj.printCarDetails();
+			
 	}
-
-	/* (non-Java-doc)
-	 * @see java.lang.Object#Object()
-	 */
-	public Main() {
-		super();
-	}
+ 
 
 }

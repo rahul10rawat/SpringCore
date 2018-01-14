@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="carBean" class="org.rahul.springcore.Car" autowire="byName">
+   
+   <!-- 	In normal case
+   			<property name="engine" ref="engineBean"/> 
+   	-->
+   		<property name="name" value="ferarri"/>
+   
+   </bean>
+   
+   <!--  engineBean id change to engine -->
+   <bean id="engine" class="org.rahul.springcore.Engine"> 
+   		<property name="name" value="hardcore engine"/> 
+   		<property name="power" value="Dx3000"/> 
+   </bean>
+   
+   
+</beans>
