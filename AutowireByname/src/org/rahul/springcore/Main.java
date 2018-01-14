@@ -1,3 +1,4 @@
+package org.rahul.springcore;
 
 public class Main {
 	public static void main(String[] args) {
